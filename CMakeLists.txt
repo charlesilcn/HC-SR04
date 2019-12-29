@@ -1,0 +1,5 @@
+﻿cmake_minimum_required (VERSION 3.8)
+project ("SR04")
+find_library(wiringPi_LIB wiringPi)
+add_executable(SR04 "main.cpp")
+target_link_libraries(SR04 ${wiringPi_LIB})
